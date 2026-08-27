@@ -73,9 +73,7 @@
     body {
       margin: 0;
       padding: 0;
-
       background: #d3d3d3;
-
       color: #000;
 
       font-family:
@@ -92,7 +90,6 @@
     .page {
       width: 100%;
       max-width: 760px;
-
       margin: 0 auto;
 
       padding:
@@ -106,9 +103,7 @@
 
     .top-text {
       font-size: 20px;
-
       font-weight: bold;
-
       letter-spacing: 2px;
 
       margin:
@@ -121,8 +116,7 @@
     /* MAIN TOP GRAPHIC */
 
     .hero {
-      background:
-        rgba(0, 0, 0, 0.20);
+      background: rgba(0, 0, 0, 0.20);
 
       border:
         3px
@@ -130,18 +124,13 @@
         #555;
 
       padding: 20px;
-
       margin-bottom: 25px;
     }
 
-
     .hero img {
       display: block;
-
       width: 100%;
-
       height: auto;
-
       margin: 0 auto;
     }
 
@@ -150,7 +139,6 @@
 
     .nav {
       font-size: 20px;
-
       font-weight: bold;
 
       margin:
@@ -159,17 +147,14 @@
         35px;
     }
 
-
     .nav a {
       color: #0000cc;
-
       text-decoration: underline;
 
       margin:
         0
         8px;
     }
-
 
     hr {
       border: 0;
@@ -211,10 +196,8 @@
         #555;
 
       padding: 20px;
-
       margin-bottom: 30px;
     }
-
 
     .section h1,
     .section h2 {
@@ -224,9 +207,7 @@
         20px;
 
       font-size: 42px;
-
       line-height: 1.05;
-
       font-weight: 900;
     }
 
@@ -235,9 +216,7 @@
 
     .presave-frame {
       display: block;
-
       width: 100%;
-
       height: 720px;
 
       border:
@@ -253,7 +232,6 @@
 
     .button {
       display: block;
-
       width: 100%;
 
       margin-top: 20px;
@@ -287,10 +265,11 @@
       color: #0000cc;
 
       font-size: 28px;
-
       font-weight: bold;
 
       text-decoration: underline;
+
+      cursor: pointer;
     }
 
 
@@ -298,9 +277,7 @@
 
     .vinyl-image {
       display: block;
-
       width: 100%;
-
       height: auto;
 
       background: #000;
@@ -310,7 +287,6 @@
         solid
         #000;
     }
-
 
     .coming-soon {
       margin:
@@ -326,9 +302,7 @@
 
     .map-frame {
       display: block;
-
       width: 100%;
-
       height: 400px;
 
       margin:
@@ -347,16 +321,12 @@
 
     .store-info {
       font-size: 22px;
-
       line-height: 1.5;
-
       font-weight: bold;
     }
 
-
     .store-info a {
       color: #0000cc;
-
       text-decoration: underline;
     }
 
@@ -376,7 +346,6 @@
         #777;
 
       font-weight: bold;
-
       letter-spacing: 1px;
     }
 
@@ -392,22 +361,18 @@
           30px;
       }
 
-
       .top-text {
         font-size: 16px;
       }
-
 
       .section h1,
       .section h2 {
         font-size: 38px;
       }
 
-
       .nav {
         font-size: 18px;
       }
-
 
       .nav a {
         margin:
@@ -415,16 +380,13 @@
           5px;
       }
 
-
       .presave-frame {
         height: 720px;
       }
 
-
       .map-frame {
         height: 350px;
       }
-
 
       .button {
         font-size: 25px;
@@ -442,21 +404,15 @@
   <div class="page">
 
 
-    <!-- ========================= -->
     <!-- HEADER -->
-    <!-- ========================= -->
 
     <div class="top-text">
-
       THE BEST LIQUOR ON SENECA STREET
-
     </div>
 
 
 
-    <!-- ========================= -->
     <!-- MAIN STORE GRAPHIC -->
-    <!-- ========================= -->
 
     <div class="hero">
 
@@ -469,9 +425,7 @@
 
 
 
-    <!-- ========================= -->
     <!-- NAVIGATION -->
-    <!-- ========================= -->
 
     <div class="nav">
 
@@ -498,9 +452,7 @@
 
 
 
-    <!-- ========================= -->
     <!-- SONG PRE-SAVE -->
-    <!-- ========================= -->
 
     <section
       class="section"
@@ -524,26 +476,20 @@
       </iframe>
 
 
-      <!-- BACKUP / FULL PAGE BUTTON -->
-
       <a
         class="button"
         href="https://hypeddit.com/hhs1ou"
         target="_blank"
         rel="noopener noreferrer"
       >
-
         OPEN PRE-SAVE PAGE
-
       </a>
 
     </section>
 
 
 
-    <!-- ========================= -->
     <!-- VINYL -->
-    <!-- ========================= -->
 
     <section
       class="section"
@@ -558,33 +504,30 @@
       <img
         class="vinyl-image"
         src="seneca-vinyl-record.PNG"
-        alt="Seneca Street Liquor vinyl record"
+        alt="Seneca Street Liquor 7 inch vinyl record"
       >
 
+
+      <!-- VINYL POPUP BUTTON -->
 
       <a
         class="button"
         href="#"
+        onclick="showVinylPopup(); return false;"
       >
-
         PRE-ORDER VINYL
-
       </a>
 
 
       <p class="coming-soon">
-
-        VINYL PRE-ORDER LINK COMING SOON
-
+        VINYL PRE-ORDER COMING SOON
       </p>
 
     </section>
 
 
 
-    <!-- ========================= -->
     <!-- THE ACTUAL STORE -->
-    <!-- ========================= -->
 
     <section
       class="section"
@@ -636,18 +579,34 @@
 
 
 
-    <!-- ========================= -->
     <!-- FOOTER -->
-    <!-- ========================= -->
 
     <footer>
-
       THE BEST LIQUOR ON SENECA STREET
-
     </footer>
 
 
   </div>
+
+
+  <!-- VINYL POPUP -->
+
+  <script>
+
+    function showVinylPopup() {
+
+      alert(
+        '7" VINYL COMING SOON\n\n' +
+        'Limited 7" vinyl release.\n\n' +
+        'A-SIDE: “Seneca Street Liquor”\n' +
+        'B-SIDE: “Seneca Street Liquor” (Instrumental)\n\n' +
+        'Pre-order coming soon.'
+      );
+
+    }
+
+  </script>
+
 
 </body>
 
