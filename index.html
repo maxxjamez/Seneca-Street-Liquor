@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>The Best Liquor on Seneca Street</title>
 
   <meta
-    name="description"
-    content="The Best Liquor on Seneca Street. Pre-save Seneca Street Liquor, pre-order the vinyl, and visit Seneca Street Liquor in Wichita, Kansas."
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
   >
 
-  <!-- iMessage / Facebook / social link preview -->
+  <!-- TAB TITLE -->
+  <title>The Best Liquor on Seneca Street</title>
+
+  <!-- GOOGLE DESCRIPTION -->
+  <meta
+    name="description"
+    content="The Best Liquor on Seneca Street. Pre-save Seneca Street Liquor, get it on vinyl, and visit Seneca Street Liquor in Wichita, Kansas."
+  >
+
+  <!-- LINK / IMESSAGE PREVIEW -->
   <meta property="og:title" content="The Best Liquor on Seneca Street">
+
   <meta
     property="og:description"
     content="Pre-save the song, get it on vinyl, and visit Seneca Street Liquor."
   >
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://senecastreetliquor.com/">
+
+  <meta
+    property="og:url"
+    content="https://senecastreetliquor.com/"
+  >
+
   <meta
     property="og:image"
     content="https://senecastreetliquor.com/store-info-transparent.png"
   >
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Best Liquor on Seneca Street">
+  <!-- TWITTER / OTHER LINK PREVIEWS -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="The Best Liquor on Seneca Street"
+  >
+
   <meta
     name="twitter:description"
     content="Pre-save the song, get it on vinyl, and visit Seneca Street Liquor."
   >
+
   <meta
     name="twitter:image"
     content="https://senecastreetliquor.com/store-info-transparent.png"
   >
 
+
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -47,203 +73,446 @@
     body {
       margin: 0;
       padding: 0;
+
       background: #d3d3d3;
+
       color: #000;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       text-align: center;
     }
+
+
+    /* WHOLE WEBSITE */
 
     .page {
       width: 100%;
       max-width: 760px;
+
       margin: 0 auto;
-      padding: 25px 20px 40px;
+
+      padding:
+        25px
+        20px
+        40px;
     }
+
+
+    /* HEADER */
 
     .top-text {
       font-size: 20px;
+
       font-weight: bold;
+
       letter-spacing: 2px;
-      margin: 20px 0 25px;
+
+      margin:
+        20px
+        0
+        25px;
     }
 
+
+    /* MAIN TOP GRAPHIC */
+
     .hero {
-      background: rgba(0, 0, 0, 0.20);
-      border: 3px solid #555;
+      background:
+        rgba(0, 0, 0, 0.20);
+
+      border:
+        3px
+        solid
+        #555;
+
       padding: 20px;
+
       margin-bottom: 25px;
     }
 
+
     .hero img {
       display: block;
+
       width: 100%;
+
       height: auto;
+
       margin: 0 auto;
     }
 
+
+    /* NAVIGATION */
+
     .nav {
       font-size: 20px;
+
       font-weight: bold;
-      margin: 25px 0 35px;
+
+      margin:
+        25px
+        0
+        35px;
     }
+
 
     .nav a {
       color: #0000cc;
+
       text-decoration: underline;
-      margin: 0 8px;
+
+      margin:
+        0
+        8px;
     }
+
 
     hr {
       border: 0;
-      border-top: 2px solid #777;
-      margin: 30px 0;
+
+      border-top:
+        2px
+        solid
+        #777;
+
+      margin:
+        30px
+        0;
     }
+
+
+    /* OLD INTERNET STYLE BOXES */
 
     .section {
       background: #c6c6c6;
-      border-top: 4px solid #fff;
-      border-left: 4px solid #fff;
-      border-right: 4px solid #555;
-      border-bottom: 4px solid #555;
+
+      border-top:
+        4px
+        solid
+        #fff;
+
+      border-left:
+        4px
+        solid
+        #fff;
+
+      border-right:
+        4px
+        solid
+        #555;
+
+      border-bottom:
+        4px
+        solid
+        #555;
+
       padding: 20px;
+
       margin-bottom: 30px;
     }
 
+
     .section h1,
     .section h2 {
-      margin: 5px 0 20px;
+      margin:
+        5px
+        0
+        20px;
+
       font-size: 42px;
+
       line-height: 1.05;
+
       font-weight: 900;
     }
 
-    .release-image {
-      display: block;
-      width: 100%;
-      height: auto;
-      border: 3px solid #000;
-    }
+
+    /* HYPEDDIT PRE-SAVE */
 
     .presave-frame {
-      width: 100%;
-      height: 720px;
-      border: 3px solid #000;
-      background: #000;
       display: block;
+
+      width: 100%;
+
+      height: 720px;
+
+      border:
+        3px
+        solid
+        #000;
+
+      background: #000;
     }
+
+
+    /* OLD SCHOOL BUTTON */
 
     .button {
       display: block;
+
       width: 100%;
+
       margin-top: 20px;
-      padding: 22px 10px;
+
+      padding:
+        22px
+        10px;
+
       background: #c6c6c6;
-      border-top: 4px solid #fff;
-      border-left: 4px solid #fff;
-      border-right: 4px solid #444;
-      border-bottom: 4px solid #444;
+
+      border-top:
+        4px
+        solid
+        #fff;
+
+      border-left:
+        4px
+        solid
+        #fff;
+
+      border-right:
+        4px
+        solid
+        #444;
+
+      border-bottom:
+        4px
+        solid
+        #444;
+
       color: #0000cc;
+
       font-size: 28px;
+
       font-weight: bold;
+
       text-decoration: underline;
     }
 
+
+    /* VINYL */
+
     .vinyl-image {
       display: block;
+
       width: 100%;
+
       height: auto;
+
       background: #000;
-      border: 3px solid #000;
+
+      border:
+        3px
+        solid
+        #000;
     }
 
+
     .coming-soon {
-      margin: 15px 0 0;
+      margin:
+        15px
+        0
+        0;
+
       font-size: 17px;
     }
 
+
+    /* GOOGLE MAP */
+
+    .map-frame {
+      display: block;
+
+      width: 100%;
+
+      height: 400px;
+
+      margin:
+        0
+        0
+        25px;
+
+      border:
+        3px
+        solid
+        #000;
+    }
+
+
+    /* STORE INFO */
+
     .store-info {
       font-size: 22px;
+
       line-height: 1.5;
+
       font-weight: bold;
     }
+
 
     .store-info a {
       color: #0000cc;
+
+      text-decoration: underline;
     }
+
+
+    /* FOOTER */
 
     footer {
       margin-top: 35px;
-      padding: 30px 10px;
-      border-top: 2px solid #777;
+
+      padding:
+        30px
+        10px;
+
+      border-top:
+        2px
+        solid
+        #777;
+
       font-weight: bold;
+
       letter-spacing: 1px;
     }
 
+
+    /* MOBILE */
+
     @media (max-width: 600px) {
+
       .page {
-        padding: 15px 20px 30px;
+        padding:
+          15px
+          20px
+          30px;
       }
+
 
       .top-text {
         font-size: 16px;
       }
+
 
       .section h1,
       .section h2 {
         font-size: 38px;
       }
 
+
       .nav {
         font-size: 18px;
       }
 
+
       .nav a {
-        margin: 0 5px;
+        margin:
+          0
+          5px;
       }
+
 
       .presave-frame {
         height: 720px;
       }
 
+
+      .map-frame {
+        height: 350px;
+      }
+
+
       .button {
         font-size: 25px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
   <div class="page">
 
+
+    <!-- ========================= -->
     <!-- HEADER -->
+    <!-- ========================= -->
+
     <div class="top-text">
+
       THE BEST LIQUOR ON SENECA STREET
+
     </div>
 
+
+
+    <!-- ========================= -->
     <!-- MAIN STORE GRAPHIC -->
+    <!-- ========================= -->
+
     <div class="hero">
+
       <img
         src="store-info-transparent.png"
         alt="Seneca Street Liquor - 403 N Seneca St, Wichita, Kansas"
       >
+
     </div>
 
+
+
+    <!-- ========================= -->
     <!-- NAVIGATION -->
+    <!-- ========================= -->
+
     <div class="nav">
-      <a href="#presave">SONG PRE-SAVE</a>
+
+      <a href="#presave">
+        SONG PRE-SAVE
+      </a>
+
       |
-      <a href="#vinyl">VINYL</a>
+
+      <a href="#vinyl">
+        VINYL
+      </a>
+
       |
-      <a href="#store">STORE</a>
+
+      <a href="#store">
+        STORE
+      </a>
+
     </div>
+
 
     <hr>
 
-    <!-- SONG PRE-SAVE -->
-    <section class="section" id="presave">
 
-      <h1>SONG PRE-SAVE</h1>
+
+    <!-- ========================= -->
+    <!-- SONG PRE-SAVE -->
+    <!-- ========================= -->
+
+    <section
+      class="section"
+      id="presave"
+    >
+
+      <h1>
+        SONG PRE-SAVE
+      </h1>
+
+
+      <!-- HYPEDDIT EMBED -->
 
       <iframe
         class="presave-frame"
@@ -251,7 +520,11 @@
         title="Seneca Street Liquor Pre-Save"
         loading="lazy"
         allow="clipboard-write"
-      ></iframe>
+      >
+      </iframe>
+
+
+      <!-- BACKUP / FULL PAGE BUTTON -->
 
       <a
         class="button"
@@ -259,15 +532,28 @@
         target="_blank"
         rel="noopener noreferrer"
       >
+
         OPEN PRE-SAVE PAGE
+
       </a>
 
     </section>
 
-    <!-- VINYL -->
-    <section class="section" id="vinyl">
 
-      <h2>GET IT ON VINYL</h2>
+
+    <!-- ========================= -->
+    <!-- VINYL -->
+    <!-- ========================= -->
+
+    <section
+      class="section"
+      id="vinyl"
+    >
+
+      <h2>
+        GET IT ON VINYL
+      </h2>
+
 
       <img
         class="vinyl-image"
@@ -275,36 +561,94 @@
         alt="Seneca Street Liquor vinyl record"
       >
 
-      <a class="button" href="#">
+
+      <a
+        class="button"
+        href="#"
+      >
+
         PRE-ORDER VINYL
+
       </a>
 
+
       <p class="coming-soon">
+
         VINYL PRE-ORDER LINK COMING SOON
+
       </p>
 
     </section>
 
-    <!-- STORE -->
-    <section class="section" id="store">
 
-      <h2>THE ACTUAL STORE</h2>
+
+    <!-- ========================= -->
+    <!-- THE ACTUAL STORE -->
+    <!-- ========================= -->
+
+    <section
+      class="section"
+      id="store"
+    >
+
+      <h2>
+        THE ACTUAL<br>
+        STORE
+      </h2>
+
+
+      <!-- GOOGLE MAP -->
+
+      <iframe
+        class="map-frame"
+        src="https://www.google.com/maps?q=Seneca+Street+Liquor,+403+N+Seneca+St,+Wichita,+KS+67203&output=embed"
+        title="Seneca Street Liquor Google Map"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+
+
+      <!-- STORE INFORMATION -->
 
       <div class="store-info">
-        SENECA STREET LIQUOR<br>
-        403 N SENECA ST.<br>
-        WICHITA, KS 67203<br>
-        <a href="tel:+13162652676">(316) 265-2676</a>
+
+        SENECA STREET LIQUOR
+
+        <br>
+
+        403 N SENECA ST.
+
+        <br>
+
+        WICHITA, KS 67203
+
+        <br>
+
+        <a href="tel:+13162652676">
+          (316) 265-2676
+        </a>
+
       </div>
 
     </section>
 
+
+
+    <!-- ========================= -->
     <!-- FOOTER -->
+    <!-- ========================= -->
+
     <footer>
+
       THE BEST LIQUOR ON SENECA STREET
+
     </footer>
+
 
   </div>
 
 </body>
+
 </html>
